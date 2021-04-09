@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora Html</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script language="Javascript" type="text/javascript" src="js/controlador.js"></script>
+</head>
+<body>
+<main class="cuerpo">
+			<section class="visor">
+                <input type="text" disabled="disabled" 	Id="numero" class="pantalla"  >
+			</section>
+			<br>
+			<section class="teclado">
+				<section>
+					<button   onclick="escribir('7')" id="siete">7</button>
+					<button   onclick="escribir('8')" id="ocho">8</button>
+					<button onclick="escribir('9')" id="nueve">9</button>
+					<button onclick="operacion(1)" id="mas">+</button>
+				</section>		
+				<section>
+					<button onclick="escribir('4')" id="cuatro">4</button>
+					<button onclick="escribir('5')" id="cinco">5</button>
+					<button onclick="escribir('6')" id="seis">6</button>
+					<button onclick="operacion(2)" id="menos">-</button>
+				</section>
+				<section>
+					<button onclick="escribir('1')" id="uno">1</button>
+					<button onclick="escribir('2')" id="dos">2</button>
+					<button onclick="escribir('3')" id="tres" >3</button>
+					<button onclick="operacion(3)" id="por">*</button> 
+				</section>
+				<section>
+					<button onclick="limpiar()"   id="borrar">CE</button>  
+					<button onclick="escribir('0')" id="cero">0</button>  
+					<button onclick="calcular()" id="igual">=</button>  
+					<button onclick="operacion(4)" id="div">/</button>  				
+				</section>
+		    </section>	
+</main>
+
+</body>
+
+</html>
